@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
 const Analysis = () => {
   return (
     <div>
@@ -8,7 +9,7 @@ const Analysis = () => {
             <div className="card bg-gradient-warning card-img-holder text-black">
               <div className="card-body">
                 {/* <img src="" className="card-img-absolute" alt="circle" /> */}
-                <h4  className="font-weight-normal mb-3 text-center">To Pipeline </h4>
+                <h4  className="font-weight-normal mb-3 text-center"><Link to ='/analysis/projectform' style={{textDecoration: 'none'}}>TO Pipeline </Link></h4>
               </div>
             </div>
           </div>

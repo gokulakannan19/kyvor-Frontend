@@ -2,7 +2,7 @@ import React, { Component,Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Spinner from '../app/shared/Spinner';
-
+import Projectform from './Projectform';
 const Dashboard = lazy(() => import('./dashboard/Dashboard'));
 
 
@@ -46,6 +46,8 @@ class AppRoutes extends Component {
           <Route path="/basic-ui/Analysis" component={ Analysis } />
           <Route path="/basic-ui/dropdowns" component={ Dropdowns } />
           <Route path="/basic-ui/typography" component={ Typography } />
+          <Route exact path="/analysis/projectform" component={ Projectform } />
+
 
 
           <Route path="/form-Elements/basic-elements" component={ BasicElements } />
