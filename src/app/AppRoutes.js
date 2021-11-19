@@ -1,6 +1,6 @@
 import React, { Component,Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-
+import ReportsTable from './basic-ui/ReportsTable';
 import Spinner from '../app/shared/Spinner';
 import Projectform from './Projectform';
 import Annovar from './basic-ui/Annovar';
@@ -46,6 +46,7 @@ class AppRoutes extends Component {
 
 
           <Route path="/basic-ui/Analysis" component={ Analysis } />
+          <Route path="/basic-ui/reports" component={ ReportsTable } />
           <Route path="/basic-ui/dropdowns" component={ Dropdowns } />
           <Route path="/basic-ui/typography" component={ Typography } />
           <Route path="/basic-ui/Annovar" component={ Annovar } />
