@@ -37,13 +37,21 @@ class Navbar extends Component {
                     <img src='' alt="user"/>
                     <span className="availability-status online"></span>
                   </div> */}
+
+                  <div className="nav-profile-img">
+                    {/* <img src='https://images.vexels.com/media/users/3/136558/isolated/preview/43cc80b4c098e43a988c535eaba42c53-person-user-icon.png' alt="user"/>
+                    <span className="availability-status online"></span> */}
+
+                    <p className="mb-1 text-black"><Trans><strong> <Avatar   color={'red'}  value="us" size="40" round="20px" /></strong> </Trans></p>
+
+                  </div>
    
            
-                  <div className="nav-profile-text">
+                  {/* <div className="nav-profile-text">
                  
                     <p className="mb-1 text-black"><Trans><strong> <Avatar   color={'red'}  value="us" size="40" round="20px" /></strong> </Trans></p>
                   
-                  </div>
+                  </div> */}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu className="navbar-dropdown">

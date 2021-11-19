@@ -1,4 +1,5 @@
 .navbar {
+  
   font-weight: $font-weight-light;
   background: $navbar-bg;
   transition:background $action-transition-duration $action-transition-timing-function;
@@ -244,6 +245,8 @@
           }
         }
         &.nav-profile {
+          margin-top: -10px;
+
           .nav-link {
             @extend .d-flex;
             .nav-profile-img {
@@ -290,6 +293,7 @@
             &.dropdown-toggle {
               &:after {
                 line-height: 2;
+                margin-top: 10px
               }
             }
           }
