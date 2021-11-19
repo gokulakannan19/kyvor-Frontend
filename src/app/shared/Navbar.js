@@ -58,7 +58,7 @@ class Navbar extends Component {
                   
                   <Dropdown.Item >
                    <i className="mdi mdi-logout mr-2 text-primary"></i>
-                    <Trans> <Link to='/user-pages/login-1'>Signout</Link></Trans>
+                    <Trans> <Link to='/user-pages/login-1' style={{ color: '#cc33ff',textDecoration:'none' }}>Signout</Link></Trans>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

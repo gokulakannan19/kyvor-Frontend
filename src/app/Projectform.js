@@ -142,7 +142,7 @@ class Projectform extends Component {
                 
                  
                   <div class="col text-center">
-                  <button type="submit" className="btn  btn-info mr-2 btn-sm"  >Submit</button>
+                  <button type="submit" className="btn  mr-2 btn-sm"  style={{backgroundColor:'#fec107'}} >Submit</button>
                  
                   </div>
                 </form>

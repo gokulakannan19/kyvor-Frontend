@@ -33,15 +33,15 @@ class Dashboard extends React.Component{
         </div>
         <div className="row">
           <div className="col-md-4 stretch-card grid-margin">
-            <div className="card bg-gradient-warning card-img-holder text-black">
+            <div className="card  card-img-holder text-black" style={{backgroundColor: '#fec107'}}>
               <div className="card-body">
                 <img src={logo3} className="card-img-absolute" alt="circle" />
-                <h4  className="font-weight-normal mb-3 text-center"><Link to="/basic-ui/Analysis"  style={{ color: '#cc33ff',textDecoration:'none' }} >Link To Analysis <i className="mdi mdi-file-find mdi-36px float-right"></i></Link></h4>
+                <h4  className="font-weight-normal mb-3 text-center"><Link to="/basic-ui/Analysis"  style={{ color: '#9900cc',textDecoration:'none' }} >Link To Analysis <i className="mdi mdi-file-find mdi-36px float-right"></i></Link></h4>
               </div>
             </div>
           </div>
           <div className="col-md-4 stretch-card grid-margin">
-            <div className="card bg-gradient-warning card-img-holder text-black">
+            <div className="card card-img-holder text-black" style={{backgroundColor: '#fec107'}}>
               <div className="card-body">
                 <img src={logo2} className="card-img-absolute" alt="circle" />
                <h4  className="font-weight-normal mb-3">Link To Reports  <i className="mdi mdi-information mdi-36px float-right"></i></h4>
@@ -49,7 +49,7 @@ class Dashboard extends React.Component{
             </div>
           </div>
           <div className="col-md-4 stretch-card grid-margin">
-            <div className="card bg-gradient-warning card-img-holder text-black">
+            <div className="card  card-img-holder text-black" style={{backgroundColor: '#fec107'}}>
               <div className="card-body">
                 <img src={logo3} className="card-img-absolute" alt="circle" />
                 <h4 className="font-weight-normal mb-3">Link To Patient Portal <i className="mdi mdi-seat-individual-suite mdi-36px float-right"></i></h4>
