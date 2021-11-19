@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 import logo2 from "../../assets/images/dashboard/circle.svg"
@@ -25,7 +26,7 @@ class Dashboard extends React.Component{
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
               <li className="breadcrumb-data active" aria-current="page">
-                <span></span>Overview <i className="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                <span></span>Overview <i className="mdi mdi-alert-circle-outline icon-sm text-primary align-center"></i>
               </li>
             </ul>
           </nav>
@@ -35,7 +36,7 @@ class Dashboard extends React.Component{
             <div className="card bg-gradient-warning card-img-holder text-black">
               <div className="card-body">
                 <img src={logo3} className="card-img-absolute" alt="circle" />
-                <h4  className="font-weight-normal mb-3">Link To Analysis <i className="mdi mdi-file-find mdi-36px float-right"></i></h4>
+                <h4  className="font-weight-normal mb-3 text-center"><Link to="/basic-ui/Analysis"  style={{ color: '#cc33ff',textDecoration:'none' }} >Link To Analysis <i className="mdi mdi-file-find mdi-36px float-right"></i></Link></h4>
               </div>
             </div>
           </div>
