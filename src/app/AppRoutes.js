@@ -3,6 +3,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Spinner from '../app/shared/Spinner';
 import Projectform from './Projectform';
+import Annovar from './basic-ui/Annovar';
+
 const Dashboard = lazy(() => import('./dashboard/Dashboard'));
 
 
@@ -46,6 +48,7 @@ class AppRoutes extends Component {
           <Route path="/basic-ui/Analysis" component={ Analysis } />
           <Route path="/basic-ui/dropdowns" component={ Dropdowns } />
           <Route path="/basic-ui/typography" component={ Typography } />
+          <Route path="/basic-ui/Annovar" component={ Annovar } />
           <Route exact path="/analysis/projectform" component={ Projectform } />
 
 
