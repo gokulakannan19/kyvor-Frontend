@@ -7,7 +7,7 @@ const Dashboard = lazy(() => import('./dashboard/Dashboard'));
 
 
 
-const Buttons = lazy(() => import('./basic-ui/Buttons'));
+const Analysis = lazy(() => import('./basic-ui/Analysis'));
 const Dropdowns = lazy(() => import('./basic-ui/Dropdowns'));
 const Typography = lazy(() => import('./basic-ui/Typography'));
 
@@ -43,7 +43,7 @@ class AppRoutes extends Component {
           <Route exact path="/dashboard" component={ Dashboard } />
 
 
-          <Route path="/basic-ui/buttons" component={ Buttons } />
+          <Route path="/basic-ui/Analysis" component={ Analysis } />
           <Route path="/basic-ui/dropdowns" component={ Dropdowns } />
           <Route path="/basic-ui/typography" component={ Typography } />
 
