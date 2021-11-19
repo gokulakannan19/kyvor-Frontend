@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 class Projectform extends Component {
     render() {
@@ -149,7 +149,7 @@ class Projectform extends Component {
                 <div class="border border-light p-3 mb-4">
 
     <div class="text-center">
-    <span><button className="btn btn-light btn-sm"> Cancel</button></span>
+    <span><Link to='/basic-ui/Analysis'><button className="btn btn-light btn-sm"> Cancel</button></Link></span>
     </div>
 
   </div>
