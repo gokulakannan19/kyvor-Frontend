@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Trans } from 'react-i18next';
+import Avatar from 'react-avatar';
 
 class Navbar extends Component {
   toggleOffcanvas() {
@@ -39,8 +40,8 @@ class Navbar extends Component {
    
            
                   <div className="nav-profile-text">
-                
-                    <p className="mb-1 text-black"><Trans><strong>User</strong> </Trans></p>
+                 
+                    <p className="mb-1 text-black"><Trans><strong> <Avatar   color={'red'}  value="us" size="40" round="20px" /></strong> </Trans></p>
                   
                   </div>
                 </Dropdown.Toggle>
