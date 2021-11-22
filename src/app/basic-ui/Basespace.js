@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Basespace = () => {
     return (
         <div>
@@ -8,7 +8,7 @@ const Basespace = () => {
                         <div className="card  card-img-holder text-black" style={{backgroundColor: '#fec107'}}>
                         <div className="card-body">
                         
-                            <h4  className="font-weight-normal mb-3 text-center">Projects </h4>
+                            <h4  className="font-weight-normal mb-3 text-center"><Link to ='/basic-ui/Basespace1' style={{ color: '#9900cc',textDecoration:'none' }}>Projects</Link> </h4>
                         </div>
                         </div>
                     </div>
