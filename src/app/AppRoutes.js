@@ -5,6 +5,8 @@ import Spinner from '../app/shared/Spinner';
 import Projectform from './Projectform';
 import Annovar from './basic-ui/Annovar';
 import Reports1 from './basic-ui/Reports1';
+import Basespace from './basic-ui/Basespace';
+import Basespace1 from './basic-ui/Basespace1'
 const Dashboard = lazy(() => import('./dashboard/Dashboard'));
 
 
@@ -46,6 +48,9 @@ class AppRoutes extends Component {
 
 
           <Route path="/basic-ui/Analysis" component={ Analysis } />
+
+          <Route path="/basic-ui/Basespace1" component={ Basespace1 } />
+          <Route path="/basic-ui/Basespace" component={ Basespace } />
           <Route path="/basic-ui/Reports1" component={ Reports1 } />
           <Route path="/basic-ui/reports" component={ ReportsTable } />
           <Route path="/basic-ui/dropdowns" component={ Dropdowns } />
