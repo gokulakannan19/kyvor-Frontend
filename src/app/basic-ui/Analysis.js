@@ -61,7 +61,7 @@ const Analysis = () => {
             <div className="card  card-img-holder text-black" style={{backgroundColor: '#fec107'}}>
               <div className="card-body">
                 {/* <img src="" className="card-img-absolute" alt="circle" /> */}
-                <h4  className="font-weight-normal mb-3 text-center"><Link to ='/basic-ui/Reports1' style={{ color: '#9900cc',textDecoration:'none' }}>Annovar</Link> </h4>
+                <h4  className="font-weight-normal mb-3 text-center"><Link to ='/basic-ui/Basespace' style={{ color: '#9900cc',textDecoration:'none' }}>Annovar</Link> </h4>
               </div>
             </div>
           </div>
