@@ -38,6 +38,7 @@ class Navbar extends Component {
                     <span className="availability-status online"></span>
                   </div> */}
 
+
                   <div className="nav-profile-img">
                     {/* <img src='https://images.vexels.com/media/users/3/136558/isolated/preview/43cc80b4c098e43a988c535eaba42c53-person-user-icon.png' alt="user"/>
                     <span className="availability-status online"></span> */}

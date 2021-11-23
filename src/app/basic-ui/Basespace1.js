@@ -49,13 +49,13 @@ export default function MaterialTableDemo() {
 
   const columns = {
     columns: [
-      { title: "Ad Name", 
+      { title: "S.NO", 
       field: "name",
      
       render: (rowData) => (
         <Link
         to={{ pathname: `/basic-ui/Annovar` }}
-        target="_blank"
+        target="_self"
         style={{ textDecoration: 'none' }}
       >
         {rowData.name}
@@ -63,13 +63,19 @@ export default function MaterialTableDemo() {
     
     ) 
     },
-      { title: "Status", field: "status" },
-      { title: "Formate", field: "formate" },
-      { title: "Cost Type", field: "costtype" },
-      { title: "Ad Listens", field: "adlistens", type: "numeric" },
-      { title: "Ads Served", field: "adserved", type: "numeric" },
-      { title: "Budget", field: "budget", type: "numeric" },
-      { title: "End Date", field: "enddate", type: "date" }
+      { title: "Owner", 
+      field: "status" ,
+      render: rowData => {
+        return(
+        rowData.status == "Pending" ? <p style={{ color: "#E87722", fontWeight: "bold" }}>{rowData.status}</p> :
+            rowData.status == "SUCCESS" ? <p style={{ color: "#008240", fontWeight: "bold" }}>{rowData.status}</p> :
+                <p style={{ color: "#B0B700", fontWeight: "bold" }}>{rowData.status}</p>
+        )},
+    },
+      { title: "Project Name", field: "formate" },
+      { title: "Size", field: "costtype" },
+      { title: "Updated at", field: "adlistens", type: "costtype" },
+     
     ]
   };
 
@@ -80,30 +86,24 @@ export default function MaterialTableDemo() {
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 0,
-        adserved: 0,
-        budget: "$100",
-        enddate: "02-02-2025"
+        adlistens: 'TO pipeline',
+       
       },
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 0,
-        adserved: 0,
-        budget: "$100",
-        enddate: "02-05-2025"
+        adlistens:  'TO pipeline',
+       
       },
       {
         name: "DTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 0,
-        adserved: 0,
-        budget: "$100",
-        enddate: "02-01-2025"
+        adlistens:  'TO pipeline',
+        
       }
     ]
   };

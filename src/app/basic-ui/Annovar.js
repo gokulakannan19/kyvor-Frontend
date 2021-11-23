@@ -46,14 +46,14 @@ const Annovar = () => {
                   
                 
                  
-                  <div class="col text-center">
+                  <div className="col text-center">
                   <button type="submit" className="btn  mr-2 btn-sm" style={{backgroundColor:'#fec107'}}  >Submit</button>
                  
                   </div>
                 </form>
-                <div class="border border-light p-3 mb-4">
+                <div className="border border-light p-3 mb-4">
 
-    <div class="text-center">
+    <div className="text-center">
     <span><Link to='/basic-ui/Analysis'><button className="btn btn-light btn-sm"> Cancel</button></Link></span>
     </div>
 
