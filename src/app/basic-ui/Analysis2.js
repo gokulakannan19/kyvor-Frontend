@@ -18,6 +18,7 @@ import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import { Link } from "react-router-dom";
 import { Typography } from "@material-ui/core";
+
 export default function MaterialTableDemo() {
   const tableIcons = {
     Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -49,7 +50,7 @@ export default function MaterialTableDemo() {
 
   const columns = {
     columns: [
-      { title: "S.No", 
+      { title: "Ad Name", 
       field: "name",
      
       render: (rowData) => (
@@ -73,10 +74,12 @@ export default function MaterialTableDemo() {
         )}, 
     
     },
-      { title: "Project Name", field: "formate" },
-      { title: "Project Source ID", field: "costtype" },
-      { title: "Analysis Type", field: "adlistens", type: "costtype" },
-     
+      { title: "Formate", field: "formate" },
+      { title: "Cost Type", field: "costtype" },
+      { title: "Ad Listens", field: "adlistens", type: "numeric" },
+      { title: "Ads Served", field: "adserved", type: "numeric" },
+      { title: "Budget", field: "budget", type: "numeric" },
+      { title: "End Date", field: "enddate", type: "date" }
     ]
   };
 
@@ -87,8 +90,10 @@ export default function MaterialTableDemo() {
         status: "Progress",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-       
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-02-2025"
       },
       
       {
@@ -96,49 +101,181 @@ export default function MaterialTableDemo() {
         status: "Success",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-        
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-        
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-        
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-        
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-        
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
-      
       {
         name: "ZTest Ad",
         status: "Pending",
         formate: "Radio/Podcast",
         costtype: "PPL",
-        adlistens: 'TO Pipeline',
-       
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
+      },
+      {
+        name: "ZTest Ad",
+        status: "Pending",
+        formate: "Radio/Podcast",
+        costtype: "PPL",
+        adlistens: 0,
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-05-2025"
       },
 
       {
@@ -147,7 +284,9 @@ export default function MaterialTableDemo() {
         formate: "Radio/Podcast",
         costtype: "PPL",
         adlistens: 0,
-        
+        adserved: 0,
+        budget: "$100",
+        enddate: "02-01-2025"
       }
     ]
   };
